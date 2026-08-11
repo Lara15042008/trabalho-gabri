@@ -1,0 +1,67 @@
+<!DOCTYPE html>                                                
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-widt, initial-scale=1.0">
+    <meta name="desccription" content="Central de chamados para atendemiento de suporte técnico.">
+    <title>Central de chamados | suporte DS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Central de chamados</h1>
+        <p>Acompanhe solicitações e prioridades da equipe de suporte.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#chamados">chamados recentes/a></li>
+                <li><a href="#orientacoes">Orientações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resumo" aria-labelledby= "titulo-resumo">
+            <h2 id="titulo-resumo">Resumo do atendimento</h2>
+            <ul>
+                <li>3 chamados em análise</li>
+                <li>2 chamados aguardando resposta</li>
+                <li>5 chamados concluídos hoje</li>
+            </ul>
+        </section>
+
+        <section id="chamados" aria-labelledby="titulo-chamados">
+            <h2 id="titulo-chamados">Chamados recentes</h2>
+
+            <article>                                                                            
+                <h3>Computador sem acesso a internet</h3>                
+                <p><strong>setor:</strong> Laboratório 02</p>
+                <p><strong>Prioridade:</strong> Alta</p>
+                <p>Verificar cabo de rede, configuração e disponibilidade do ponto.</p>
+             </article>
+
+             <article>
+                 <h3>instalação do ambiente Python</h3>
+                 <p><strong>setor:</strong> Desenvolvimento de sistemas</p>
+                 <p><strong>Priodade:</strong> Media</p>
+                 <p>Preparar Pyton, extensão do VS code e teste de execução no terminal.<p/>
+                </article>
+             </section>
+    
+            <section id="orientações" aria-labelledby="titulo-orientações">
+                <h2 id="titulo-orientações">Orientações  para abrir um chamado</h2>
+                <ol>
+                    <li>Descreva o problema com clareza.</li>
+                    <li>Informe o equipamento e o local.</li>
+                    <li>Registre mensagens de erro ou testes já realizados.</li>
+                    </ol>
+                </section>
+            </main>
+
+            <footer>
+               <p>Projeto educacional - 3° DS . Programação no Desenvolvimento de sistemas</p>
+            </footer>
+            <script src="script.js"></script>
+        </body>
+        </html>
