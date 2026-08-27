@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Painel Administrativo</h1>
+    <nav aria-label="Navegação principal">
+      <a href="#visao-geral">Visão geral</a>
+      <a href="#usuarios">Usuários</a>
+      <a href="#relatorios">Relatórios</a>
+    </nav>
+  </header>
+
+  <main>
+    <aside aria-label="Menu administrativo">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#visao-geral">Resumo</a></li>
+        <li><a href="#usuarios">Usuários</a></li>
+        <li><a href="#relatorios">Relatórios</a></li>
+      </ul>
+    </aside>
+
+    <section id="visao-geral">
+      <h2>Visão geral</h2>
+      <article>
+        <h3>Contas ativas</h3>
+        <p>128 usuários cadastrados.</p>
+      </article>
+      <article>
+        <h3>Chamados abertos</h3>
+        <p>34 solicitações em acompanhamento.</p>
+      </article>
+    </section>
+
+    <section id="usuarios">
+      <h2>Usuários</h2>
+      <p>Área destinada ao gerenciamento de contas e perfis.</p>
+    </section>
+
+    <section id="relatorios">
+      <h2>Relatórios</h2>
+      <p>Área destinada aos indicadores e relatórios do sistema.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Protótipo HTML - 3DS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
