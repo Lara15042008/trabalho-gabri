@@ -1,0 +1,2 @@
+// O foco deste exercício é a estrutura semântica de um painel administrativo.
+console.info('Exercício 05: protótipo HTML carregado.');
