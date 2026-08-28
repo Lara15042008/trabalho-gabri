@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portal de serviços com navegação entre painel, cadastro e relatório."> <title>Painel | Portal de Serviços DS</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+<div>
+<p class="marca">Portal de Serviços DS</p>
+<h1>Painel de atendimento</h1>
+</div>
+<nav aria-label="Navegação principal">
+<ul>
+<li><a href="index.html" aria-current="page">Painel</a></li> <li><a href="paginas/cadastro.html">Cadastro</a></li> <li><a href="paginas/relatorio.html">Relatório</a></li> </ul>
+</nav>
+</header>
+<main>
+<section class="boas-vindas" aria-labelledby="titulo-visao-geral"> <div>
+<p class="etiqueta">Visão geral</p>
+
+<h2 id="titulo-visao-geral">Organize as rotinas do sistema</h2>
+<p>Este miniportal separa cada responsabilidade em uma página própria e mantém o mesmo menu em todo o projeto.</p>
+</div>
+<a class="botao" href="paginas/cadastro.html">Cadastrar usuário</a>
+</section>
+<section class="grade" aria-label="Atalhos do sistema">
+<article>
+<p class="numero">1</p>
+<h2>Cadastro</h2>
+<p>Registre usuários, perfis e setores em uma página dedicada.</p>
+<a href="paginas/cadastro.html">Abrir cadastro</a>
+</article>
+<article>
+<p class="numero">82</p>
+<h2>Relatório</h2>
+<p>Consulte registros recentes e acompanhe a situação dos atendimentos.</p>
+<a href="paginas/relatorio.html">Abrir relatório</a>
+</article>
+<article>
+<p class="numero">03</p>
+<h2>Estrutura</h2>
+<p>Observe como caminhos relativos conectam arquivos localizados em pastas diferentes.</p> 
+<a href="README.md">Ler orientacões</a>
+
+</article>
+</section>
+</main>
+<footer>
+<p>3 DS - Programação no Desenvolvimento de Sistemas</p> </footer>
+<script src="script.js"></script>
+</body>
+</html>
