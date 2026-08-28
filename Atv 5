@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8">
+<meta name="description" content="Protótipo semántico de painel administrativo com indicadores, formulário e registros.">
+ <title>Painel Administrativo | Sistema DS</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+<div>
+<p class="marca">Sistema DS</p>
+<h1>Painel administrativo</h1>
+</div>
+<nav aria-label="Navegação do painel">
+<ul>
+<li><a href="#visao-geral">Visão geral</a></li> <li><a href="#indicadores">Indicadores</a></li>
+<li><a href="#novo-registro">Novo registro</a></li> <li><a href="#registros">Registros</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="visao-geral" class="apresentacao" aria-labelledby="titulo-visao-geral">
+<div>
+
+<p class="etiqueta">Central de operaçoes</p>
+<h2 id="titulo-visao-geral">Acompanhe as rotinas do sistema</h2>
+<p>0 painel reúne informações essenciais para consultar resultados, cadastrar solicitações e acompanhar registros em uma única ordem de leitura </div>
+<a class="acao-principal" href="#novo-registro">Criar solicitação</a>
+</section>
+<section id="indicadores" aria-labelledby="titulo-indicadores">
+<div class="cabecalho-secao">
+<p class="etiqueta">Resumo do dia</p>
+<h2 id="titulo-indicadores">Indicadores principais</h2>
+</div>
+<div class="grade-indicadores">
+<article>
+<h3>Usuários ativos</h3>
+<p class="valor">128</p>
+<p>Contas com acesso liberado.</p>
+</article>
+<article>
+<h3>Solicitações abertas</h3>
+<p class="valor">17</p>
+<p>Registros aguardando atendimento.</p>
+</article>
+<article>
+<h3>Em análise</h3>
+<p class="valor">09</p>
+<p>Solicitações em verificarãn.</p>
+
+</article>
+<article>
+<h3>Concluidas hoje</h3>
+<p class="valor">24</p>
+<p>Atendimentos finalizados no dia.</p>
+</article>
+</div>
+</section>
+<section id="novo-registro" class="painel-formulario" aria-labelledby="titulo-formulario"> <div>
+<p class="etiqueta">Entrada de dados</p>
+<h2 id="titulo-formulario">Cadastrar nova solicitação</h2>
+<p>Os campos organizam os dados mínimos necessários para encaminhar um atendimento.</p>
+</div>
+<form id="form-solicitacao">
+<div class="campo">
+<label for="solicitante">Nome do solicitante</label>
+<input type="text" id="solicitante" name="solicitante" autocomplete="name" required> </div>
+<div class="campo">
+<label for="email">E-mail para contato</label>
+<input type="email" id="email" name="email" autocomplete="email" required>
+</div>
+<div class="campo">
+<label for="categoria">Categoria</label>
+
+<select id="categoria" name="categoria" required> <option value="">Selecione</option>
+<option value="acesso">Acesso ao sistema</option>
+<option value="cadastro">Atualização de cadastro</option>
+<option value="suporte">Suporte técnico</option> </select>
+</div>
+<fieldset>
+<legend>Prioridade</legend>
+<label><input type="radio" name="prioridade" value="normal" required> Normal</label> <label><input type="radio" name="prioridade" value="urgente"> Urgente</label>
+</fieldset>
+<div class="acoes-formulario">
+<button type="submit">Registrar solicitação</button>
+<button type="reset">Limpar campos</button>
+</div>
+<p id="feedback-formulario" class="feedback" role="status" aria-live="polite"></p> </form>
+</section>
+<section id="registros" aria-labelledby="titulo-registros">
+<div class="cabecalho-secao">
+<p class="etiqueta">Acompanhamento</p>
+<h2 id="titulo-registros">Registros recentes</h2>
+</div>
+<div class="table-scroll" role="region" aria-label="Tabela rolável de solicitações" tabindex="0">
+<table>
+
+<caption>Solicitações registradas no painel administrativo</caption>
+<thead>
+<tr>
+<th scope="col">Código</th> <th scope="col">Solicitante</th> <th scope="col">Categoria</th> <th scope="col">Prioridade</th>
+<th scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr tabindex="0">
+<td>SD-051</td>
+<td>Camila Rocha</td>
+<td>Acesso ao sistema</td>
+<td>Normal</td>
+<td><span class="status">Em análise</span></td>
+</tr>
+<tr tabindex="0">
+<td>SD-052</td>
+<td>Felipe Santos</td>
+<td>Suporte técnico</td>
+<td>Urgente</td>
+<td><span class="status">Em atendimento</span></td>
+</tr>
+<tr tabindex="0">
+<td>SD-053</td>
+<td>Juliana Mendes</td>
+<td>Atualização de cadastro</td>
+<td>Normal</td>
+
+<td><span class="status">Concluído</span></td>
+</tr>
+</tbody>
+</table>
+</div> </section>
+</main>
+<footer>
+<p>3 DS - Programação no Desenvolvimento de Sistemas</p> <a href="#visao-geral">Voltar ao início do painel</a> </footer>
+<script src="script.js"></script>
+</body>
+</html>
